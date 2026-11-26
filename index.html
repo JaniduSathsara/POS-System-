@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POS System</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <aside class="sidebar">
+            <h2>POS<span> System</span></h2>
+
+            <nav>
+                <a class="active" href="#">Dashboard</a>
+                <a href="products.html">Products</a>
+                <a href="categories.html">Categories</a>
+                <a href="orders.html">Orders</a>
+                <a href="customers.html">Customers</a>
+                <a href="reports.html">Reports</a>
+                <a href="settings.html">Settings</a>
+            </nav>
+
+            <div class="logout">
+                <a href="#">Logout</a>
+            </div>
+        </aside>
+
+
+        <main class="main">
+
+            <header class="topbar">
+                <div>
+                    <h2>Point of Sale</h2>
+                    <p>Manage your sales and orders</p>
+                </div>
+
+                <div class="profile">
+                    <span>Admin</span>
+                    <div class="avatar">A</div>
+                </div>
+            </header>
+
+            <div class="content">
+
+                <section class="products">
+
+                    <div class="search">
+                        <input type="text" placeholder="Search products...">
+                    </div>
+
+                    <div class="categories">
+                        <button class="selected">All</button>
+                        <button>Food</button>
+                        <button>Drinks</button>
+                        <button>Snacks</button>
+                        <button>Others</button>
+                    </div>
+
+                    <h3>Available Products</h3>
+
+                    <div class="product-grid">
+
+                        <div class="product-card">
+                            <div class="product-img">🍔</div>
+                            <h4>Burger</h4>
+                            <p>Rs. 850.00</p>
+                            <button>Add to Cart</button>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-img">🍕</div>
+                            <h4>Pizza</h4>
+                            <p>Rs. 1200.00</p>
+                            <button>Add to Cart</button>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-img">🥤</div>
+                            <h4>Soft Drink</h4>
+                            <p>Rs. 250.00</p>
+                            <button>Add to Cart</button>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-img">🍟</div>
+                            <h4>French Fries</h4>
+                            <p>Rs. 450.00</p>
+                            <button>Add to Cart</button>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-img">🍗</div>
+                            <h4>Chicken</h4>
+                            <p>Rs. 950.00</p>
+                            <button>Add to Cart</button>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-img">🍩</div>
+                            <h4>Donut</h4>
+                            <p>Rs. 300.00</p>
+                            <button>Add to Cart</button>
+                        </div>
+
+                    </div>
+                </section>
+
+                <section class="cart">
+
+                    <h3>Current Order</h3>
+                    <p class="order-id">Order #001</p>
+
+                    <div class="cart-items">
+
+                        <div class="cart-item">
+                            <div>
+                                <h4>Burger</h4>
+                                <p>Rs. 850.00</p>
+                            </div>
+                            <div class="quantity">
+                                <button>-</button>
+                                <span>1</span>
+                                <button>+</button>
+                            </div>
+                        </div>
+
+                        <div class="cart-item">
+                            <div>
+                                <h4>Soft Drink</h4>
+                                <p>Rs. 250.00</p>
+                            </div>
+                            <div class="quantity">
+                                <button>-</button>
+                                <span>1</span>
+                                <button>+</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="summary">
+                        <div><span>Subtotal</span><span>Rs. 1,100.00</span></div>
+                        <div><span>Tax (0%)</span><span>Rs. 0.00</span></div>
+                        <div class="total">
+                            <span>Total</span>
+                            <span>Rs. 1,100.00</span>
+                        </div>
+                    </div>
+
+                    <button class="checkout">Checkout</button>
+
+                </section>
+
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
