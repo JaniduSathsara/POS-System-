@@ -1,0 +1,128 @@
+
+.login-page {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: var(--surface);
+}
+
+.login-brand {
+    background: linear-gradient(160deg, #111a2e 0%, #1c2b4d 100%);
+    color: #fff;
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.login-brand h1 {
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+}
+
+.login-brand h1 span {
+    color: #6ea2ff;
+    font-weight: 600;
+}
+
+.login-brand h2 {
+    font-size: 36px;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    max-width: 380px;
+    margin-bottom: 14px;
+}
+
+.login-brand p {
+    color: var(--sidebar-text);
+    max-width: 380px;
+}
+
+.login-form-wrap {
+    display: grid;
+    place-items: center;
+    padding: 32px 24px;
+    background: var(--bg);
+}
+
+.login-card {
+    width: 100%;
+    max-width: 400px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-lg);
+    padding: 36px;
+    box-shadow: var(--shadow-md);
+}
+
+.login-card h2 {
+    font-size: 26px;
+    letter-spacing: -0.02em;
+}
+
+.login-card .sub {
+    color: var(--ink-faint);
+    margin: 4px 0 26px;
+}
+
+.password-box {
+    position: relative;
+}
+
+.password-box input {
+    padding-right: 70px;
+}
+
+.toggle-pass {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: var(--brand);
+    font-weight: 600;
+    font-size: 13px;
+    padding: 6px 8px;
+    border-radius: 6px;
+}
+
+.toggle-pass:hover {
+    background: var(--brand-soft);
+}
+
+.login-error {
+    display: none;
+    background: var(--danger-soft);
+    color: var(--danger-text);
+    border-radius: var(--radius-sm);
+    padding: 11px 14px;
+    font-size: 14px;
+    margin-bottom: 18px;
+}
+
+.login-error.show {
+    display: block;
+}
+
+.login-card .btn {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+}
+
+.btn[disabled] {
+    opacity: 0.65;
+    cursor: not-allowed;
+}
+
+@media (max-width: 850px) {
+    .login-page {
+        grid-template-columns: 1fr;
+    }
+
+    .login-brand {
+        display: none;
+    }
+}
