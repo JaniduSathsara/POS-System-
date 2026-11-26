@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customers | POS System</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>POS<span> System</span></h2>
+            <nav><a href="index.html">Dashboard</a><a href="products.html">Products</a><a
+                    href="categories.html">Categories</a><a href="orders.html">Orders</a><a class="active"
+                    aria-current="page" href="customers.html">Customers</a><a href="reports.html">Reports</a><a
+                    href="settings.html">Settings</a></nav>
+            <div class="logout"><a href="#">Logout</a></div>
+        </aside>
+        <main class="main">
+            <header class="topbar">
+                <div>
+                    <h2>Point of Sale</h2>
+                    <p>Manage your sales and orders</p>
+                </div>
+                <div class="profile"><span>Admin</span>
+                    <div class="avatar">A</div>
+                </div>
+            </header>
+            <div class="content">
+                <div class="page-title">
+                    <h2>Customers</h2>
+                    <p>Manage your customer details.</p>
+                </div>
+                <div class="panel">
+                    <div class="toolbar">
+                        <div class="search"><input placeholder="Search customers..."></div><button class="btn">+ Add
+                            Customer</button>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Phone</th>
+                                <th>Email</th>
+                                <th>Total Orders</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Kasun Perera</td>
+                                <td>077 123 4567</td>
+                                <td>kasun@example.com</td>
+                                <td>8</td>
+                            </tr>
+                            <tr>
+                                <td>Nimal Silva</td>
+                                <td>071 234 5678</td>
+                                <td>nimal@example.com</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td>Amali Fernando</td>
+                                <td>076 345 6789</td>
+                                <td>amali@example.com</td>
+                                <td>3</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="JS/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orders | POS System</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>POS<span> System</span></h2>
+            <nav><a href="index.html">Dashboard</a><a href="products.html">Products</a><a
+                    href="categories.html">Categories</a><a class="active" aria-current="page"
+                    href="orders.html">Orders</a><a href="customers.html">Customers</a><a
+                    href="reports.html">Reports</a><a href="settings.html">Settings</a></nav>
+            <div class="logout"><a href="#">Logout</a></div>
+        </aside>
+        <main class="main">
+            <header class="topbar">
+                <div>
+                    <h2>Point of Sale</h2>
+                    <p>Manage your sales and orders</p>
+                </div>
+                <div class="profile"><span>Admin</span>
+                    <div class="avatar">A</div>
+                </div>
+            </header>
+            <div class="content">
+                <div class="page-title">
+                    <h2>Orders</h2>
+                    <p>View and manage customer orders.</p>
+                </div>
+                <div class="panel">
+                    <div class="toolbar">
+                        <div class="search"><input placeholder="Search orders..."></div><button class="btn">Filter
+                            Orders</button>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Order ID</th>
+                                <th>Customer</th>
+                                <th>Date</th>
+                                <th>Total</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>#001</td>
+                                <td>Walk-in Customer</td>
+                                <td>26 Nov 2026</td>
+                                <td>Rs. 1,100.00</td>
+                                <td><span class="status">Completed</span></td>
+                            </tr>
+                            <tr>
+                                <td>#002</td>
+                                <td>Customer 02</td>
+         X                       <td>26 Nov 2026</td>
+                                <td>Rs. 2,450.00</td>
+                                <td><span class="status pending">Pending</span></td>
+                            </tr>
+                            <tr>
+                                <td>#003</td>
+                                <td>Customer 03</td>
+                                <td>25 Nov 2026</td>
+                                <td>Rs. 850.00</td>
+                                <td><span class="status cancelled">Cancelled</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="JS/script.js"></script>
+</body>
+
+</html>
